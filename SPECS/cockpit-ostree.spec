@@ -1,6 +1,6 @@
 Name: cockpit-ostree
 Epoch: 1
-Version: 196
+Version: 200
 Release: 1%{?dist}
 BuildArch: noarch
 Summary: Cockpit user interface for rpm-ostree
@@ -29,6 +29,27 @@ Cockpit component for managing software updates for ostree based systems.
 %{_datadir}/cockpit/*
 
 %changelog
+* Wed Feb 14 2024 Packit <hello@packit.dev> - 1:200-1
+- Bug fixes and stability improvements
+
+* Wed Jan 24 2024 Fedora Release Engineering <releng@fedoraproject.org> - 1:199-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_40_Mass_Rebuild
+
+* Fri Jan 19 2024 Fedora Release Engineering <releng@fedoraproject.org> - 1:199-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_40_Mass_Rebuild
+
+* Thu Jan 18 2024 Packit <hello@packit.dev> - 1:199-1
+- library and translation updates
+
+* Wed Nov 29 2023 Packit <hello@packit.dev> - 1:198.1-1
+- Fix card and dialog titles
+
+* Wed Nov 29 2023 Packit <hello@packit.dev> - 1:198-1
+- Redesign cards, add reset, cleanup, and pinning
+
+* Wed Sep 06 2023 Packit <hello@packit.dev> - 1:197-1
+- Bug fixes and stability improvements
+
 * Wed Aug 09 2023 Packit <hello@packit.dev> - 1:196-1
 - Update to PatternFly 5
 
