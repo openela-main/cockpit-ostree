@@ -1,6 +1,6 @@
 Name: cockpit-ostree
 Epoch: 1
-Version: 204
+Version: 207
 Release: 1%{?dist}
 BuildArch: noarch
 Summary: Cockpit user interface for rpm-ostree
@@ -11,6 +11,10 @@ Requires: cockpit-system >= 125
 Requires: rpm-ostree
 
 Source: https://github.com/cockpit-project/%{name}/releases/download/%{version}/cockpit-ostree-%{version}.tar.xz
+
+%if 0%{?fedora} >= 41 || 0%{?rhel}
+ExcludeArch: %{ix86}
+%endif
 
 %define debug_package %{nil}
 
@@ -29,6 +33,18 @@ Cockpit component for managing software updates for ostree based systems.
 %{_datadir}/cockpit/*
 
 %changelog
+* Thu Jan 30 2025 Packit <hello@packit.dev> - 1:207-1
+- Bug fixes and translation updates
+
+* Thu Jan 16 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1:206-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
+* Wed Nov 20 2024 Packit <hello@packit.dev> - 1:206-1
+- Updates to translations
+
+* Wed Oct 23 2024 Packit <hello@packit.dev> - 1:205-1
+- Bug fixes and translation updates
+
 * Thu Aug 08 2024 Packit <hello@packit.dev> - 1:204-1
 - Bug fixes
 
