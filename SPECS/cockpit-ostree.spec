@@ -1,6 +1,6 @@
 Name: cockpit-ostree
 Epoch: 1
-Version: 213
+Version: 222
 Release: 1%{?dist}
 BuildArch: noarch
 Summary: Cockpit user interface for rpm-ostree
@@ -33,6 +33,46 @@ Cockpit component for managing software updates for ostree based systems.
 %{_datadir}/cockpit/*
 
 %changelog
+* Wed Feb 11 2026 Packit <hello@packit.dev> - 1:222-1
+- Convert license headers to SPDX format
+
+
+* Wed Jan 28 2026 Packit <hello@packit.dev> - 1:221-1
+- Packaging fixes and translation updates
+
+
+* Fri Jan 16 2026 Fedora Release Engineering <releng@fedoraproject.org> - 1:220-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_44_Mass_Rebuild
+
+* Fri Jan 16 2026 Fedora Release Engineering <releng@fedoraproject.org> - 1:220-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_44_Mass_Rebuild
+
+* Wed Dec 10 2025 Packit <hello@packit.dev> - 1:220-1
+- Dependency updates
+
+
+* Wed Nov 26 2025 Packit <hello@packit.dev> - 1:219-1
+- Translation and dependency updates
+
+
+* Wed Nov 12 2025 Packit <hello@packit.dev> - 1:218-1
+- Performance and stability improvements
+
+
+* Wed Oct 29 2025 Packit <hello@packit.dev> - 1:217-1
+- Translations and dependency updates
+
+
+* Wed Oct 15 2025 Packit <hello@packit.dev> - 1:216-1
+- Bug fixes and translation updates
+
+* Thu Oct 02 2025 Packit <hello@packit.dev> - 1:215-1
+- Site-specific branding support
+- Bug fixes and translation updates
+
+* Wed Aug 20 2025 Packit <hello@packit.dev> - 1:214-1
+- Translation and dependency updates
+
 * Wed Aug 06 2025 Packit <hello@packit.dev> - 1:213-1
 Bug fixes and translation updates
 
